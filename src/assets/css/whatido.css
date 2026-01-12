@@ -1,0 +1,45 @@
+.whatido {
+  padding: 80px 50px;
+  background-color: #f5f8ff;
+}
+
+.whatido .container {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap; /* responsive */
+}
+
+.whatido .image-side {
+  flex: 1;
+  min-width: 300px;
+}
+
+.whatido .image-side img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.whatido .text-side {
+  flex: 1;
+  min-width: 300px;
+}
+
+.whatido .text-side h2 {
+  font-size: 3rem;
+  color: #001C55;
+  margin-bottom: 30px;
+}
+
+.whatido .text-side ul {
+  list-style-type: decimal-leading-zero;
+  padding-left: 20px;
+  color: #333;
+}
+
+.whatido .text-side ul li {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}

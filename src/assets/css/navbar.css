@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&display=swap');
+
+/* Navbar container */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px;
+}
+
+/* Navbar logo */
+.navbar h2 {
+  font-family: 'Edu NSW ACT Cursive', cursive;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  cursor: default;
+  color: #001C55;
+}
+
+/* Navbar links */
+.navbar ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin-right: 45px;
+  padding: 0;
+}
+
+.navbar ul li a {
+  color: #001C55; 
+  font-family:Georgia, 'Times New Roman', Times, serif; 
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+/* Hover effect */
+.navbar ul li a:hover {
+  background-color: #001C55;
+  color: #fff;
+  padding: 15px;
+}

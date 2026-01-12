@@ -1,0 +1,24 @@
+.footer {
+  background-color: #fff; /* white background */
+  color: #000000;          /* dark blue text */
+  text-align: center;
+  padding: 5px 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer span {
+  color: #ff4d6d; /* red heart accent */
+  animation: heartbeat 1.5s infinite;
+}
+
+/* Heartbeat animation */
+@keyframes heartbeat {
+  0%, 100% { transform: scale(1); }
+  25% { transform: scale(1.2); }
+  50% { transform: scale(1); }
+  75% { transform: scale(1.2); }
+}

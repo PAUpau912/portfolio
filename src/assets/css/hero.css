@@ -1,0 +1,141 @@
+/* Wave animation for emoji */
+.hero h1 span {
+  display: inline-block; /* important para ma-animate */
+  animation: wave 1.5s infinite;
+  transform-origin: 70% 70%; /* pivot point for waving */
+}
+
+/* Keyframes for wave motion */
+@keyframes wave {
+  0% { transform: rotate(0deg); }
+  10% { transform: rotate(14deg); }
+  20% { transform: rotate(-8deg); }
+  30% { transform: rotate(14deg); }
+  40% { transform: rotate(-4deg); }
+  50% { transform: rotate(10deg); }
+  60% { transform: rotate(0deg); }
+  100% { transform: rotate(0deg); }
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 50px;
+  background-color: lch(97.93% 0.01 296.81); /* light background */
+  min-height: 90vh;
+  gap: 40px;
+  flex-wrap: wrap; /* responsive for small screens */
+}
+
+/* Left content (text + socials + buttons) */
+.hero > div {
+  flex: 1;
+  max-width: 800px;
+}
+
+/* Heading */
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #001C55;
+}
+
+.hero h1 span {
+  color: #00bfff; 
+}
+
+/* Subtitle / description */
+.hero p {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+/* Social icons */
+.hero .socials {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.hero .socials svg {
+  font-size: 1.8rem;
+  color: #001C55;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.hero .socials svg:hover {
+  color: #00bfff;
+  transform: scale(1.2);
+}
+
+/* Buttons */
+.hero .buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.hero .buttons button {
+  padding: 12px 25px;
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: #001C55;
+  color: #fff;
+}
+
+.hero .buttons button:hover {
+  background-color: #fff;
+  color: #001C55
+}
+
+.hero .buttons button.outline {
+  background-color: #001C55;
+  color: #fff;
+  border: 2px solid #001C55;
+}
+
+.hero .buttons button.outline:hover {
+  background-color: #fff;
+  color: #001C55;
+}
+
+/* Avatar Image */
+.hero img {
+  flex: 1;
+  max-width: 400px;
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* Responsive for mobile */
+@media screen and (max-width: 900px) {
+  .hero {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 50px 20px;
+  }
+
+  .hero img {
+    max-width: 250px;
+    margin-bottom: 30px;
+  }
+
+  .hero .buttons {
+    justify-content: center;
+  }
+
+  .hero .socials {
+    justify-content: center;
+  }
+}

@@ -1,5 +1,6 @@
 import { FaLinkedin, FaGithub, FaFacebook } from "react-icons/fa";
 import "../assets/css/hero.css";
+import profilePic from "../assets/prof_pic.jpg";
 
 export default function Hero() {
   return (
@@ -56,7 +57,7 @@ export default function Hero() {
         </div>
       </div>
 
-      <img src="/src/assets/prof_pic.jpg" alt="avatar" />
+      <img src={profilePic} alt="avatar" />
     </section>
   );
 }
